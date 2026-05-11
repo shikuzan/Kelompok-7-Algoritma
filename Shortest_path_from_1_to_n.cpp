@@ -1,10 +1,7 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
-class Solution {
-  public:
-    int minimumStep(int n) {
+int minimumStep(int n) {
         // complete the function here
          int count = 0;
         while(n > 1){
@@ -14,12 +11,10 @@ class Solution {
         }
         return count;
     }
-};
 int main(){
     int n;
     cout << "Input N: ";
     cin >> n;
-    Solution shortestPath;
-    cout << "Shortest path = " << shortestPath.minimumStep(n);    
+    cout << "Shortest path = " << minimumStep(n);
     return 0;
 }
