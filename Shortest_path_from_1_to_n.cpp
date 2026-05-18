@@ -2,9 +2,8 @@
 using namespace std;
 
 int minimumStep(int n) {
-        // complete the function here
-         int count = 0;
-        while(n > 1){
+        int count = 0; //Jumlah langkah/jarak ke n
+        while(n >= 1){
             if(n % 3 == 0) n /= 3;
             else n--;
             count++;
@@ -12,7 +11,7 @@ int minimumStep(int n) {
         return count;
     }
 int main(){
-    int n;
+    int n; //Jumlah node
     cout << "Input N: ";
     cin >> n;
     cout << "Shortest path = " << minimumStep(n);
